@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VoiceVerse.ai</title>
+    <link rel="stylesheet" href="/static/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.9.5/brython.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.9.5/brython_stdlib.min.js"></script>
+    </head>
+<body>
+    <div class="container">
+        <h1>VoiceVerse.ai</h1>
+        <button id="record">Hold to speak</button>
+        <div id="conversation"></div>
+    </div>
+    <script type="text/python" src="/static/main.py"></script>
+    <script>
+        window.onload = function() {
+            brython()
+        }
+    </script>
+</body>
+</html>
